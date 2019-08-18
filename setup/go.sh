@@ -16,5 +16,5 @@ echo "export GOPATH=`pwd`/../gopath" >> ~/.bashrc
 echo "======== Updated .profile with GOROOT/GOPATH/PATH===="
 
 source ~/.profile
-echo "======= Done. PLEASE LOG OUT & LOG Back In ===="
+echo "======= Done. PLEASE Execute   source ~/.profile ===="
 echo "Then validate by executing    'go version'"
