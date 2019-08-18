@@ -1,3 +1,3 @@
 # Installs the JQ Utility
 
-sudo apt-get install -y jq
+apt-get install -y jq
