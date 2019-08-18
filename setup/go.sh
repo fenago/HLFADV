@@ -1,14 +1,6 @@
-if [ -z $SUDO_USER ]
-then
-    echo "===== Script need to be executed with sudo ===="
-    echo "Change directory to 'setup'"
-    echo "Usage: sudo ./caserver.sh"
-    exit 0
-fi
-
 echo "=======Set up go======"
-sudo apt-get update
-sudo apt-get -y install golang-1.10-go
+apt-get update
+apt-get -y install golang-1.10-go
 
 mv /usr/lib/go-1.10 /usr/local
 mv /usr/local/go-1.10   /usr/local/go
