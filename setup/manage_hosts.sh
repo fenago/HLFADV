@@ -3,7 +3,7 @@
 # PATH TO YOUR HOSTS FILE
 ETC_HOSTS=/etc/hosts
 
-# DEFAULT IP FOR HOSTNAME
+# DEFAULT IP FOR HOSTNAME (consider changing back to 127.0.0.1)
 IP="0.0.0.0"
 
 # Hostname to add/remove.
@@ -27,7 +27,8 @@ function addhost {
             echo "$HOSTNAME already exists : $(grep $HOSTNAME $ETC_HOSTS)"
         else
             echo "Adding $HOSTNAME to your $ETC_HOSTS";
-            sudo -- sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
+#            sudo -- sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
+            sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
 
             if [ -n "$(grep $HOSTNAME /etc/hosts)" ]
                 then
