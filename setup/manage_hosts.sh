@@ -4,7 +4,7 @@
 ETC_HOSTS=/etc/hosts
 
 # DEFAULT IP FOR HOSTNAME
-IP="127.0.0.1"
+IP="0.0.0.0"
 
 # Hostname to add/remove.
 HOSTNAME=$1
