@@ -21,6 +21,6 @@ then
 else
     echo "======== No Change made to .profile ====="
 fi
-
+source ~/.profile
 echo "======= Done. PLEASE LOG OUT & LOG Back In ===="
 echo "Then validate by executing    'go version'"
