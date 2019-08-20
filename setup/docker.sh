@@ -2,9 +2,9 @@
 
 if [ -z $SUDO_USER ]
 then
-    echo "===== Script need to be executed with sudo ===="
+    echo "===== Script need to be executed with  ===="
     echo "Change directory to 'setup'"
-    echo "Usage: sudo ./docker.sh"
+    echo "Usage:  ./docker.sh"
     exit 0
 fi
 
@@ -24,7 +24,7 @@ echo "======= Adding $USER to the docker group ======="
 usermod -aG docker $SUDO_USER
 
 # Installs docker-compose
-sudo apt-get install -y docker-compose
+ apt-get install -y docker-compose
 
 echo "======= Done. PLEASE LOG OUT & LOG Back In ===="
 echo "Then validate by executing    'docker ps'"

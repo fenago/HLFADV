@@ -12,6 +12,6 @@ source set-env.sh
 echo "====> Deleting.....$CORE_PEER_FILESYSTEM_PATH"
 
 # Delete the ledger
-sudo rm -rf $CORE_PEER_FILESYSTEM_PATH
+ rm -rf $CORE_PEER_FILESYSTEM_PATH
 
 echo "====> Done."

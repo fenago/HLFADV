@@ -4,6 +4,6 @@
 $HOME/kafka/bin/kafka-server-stop.sh
 
 # Stop Zookeeper
-sudo service zookeeper stop
+service zookeeper stop
 
 echo "Done."

@@ -263,7 +263,7 @@ Remote access to Futon
 By default CouchDB binds to localhost:5984 as a result it wont be accessible from remote machine
 To fix this bind address need to be changed
 
-> sudo vi  /etc/couchdb/local.ini
+>  vi  /etc/couchdb/local.ini
 [httpd]
 bind_address=0.0.0.0
 

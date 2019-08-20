@@ -36,7 +36,7 @@ Update the cloud/set-env.sh with Public IP address of peers for Acme/Budger/Expo
     - cloud/bins/orderer/*
 3. Move the orderer binary to /usr/local/bin
 > chmod 755 orderer
-> sudo mv orderer /usr/local/bin
+>  mv orderer /usr/local/bin
 > orderer version
 4. Untar the ./orderer-msp.tar
 > tar xvf orderer-msp.tar
@@ -62,11 +62,11 @@ Update the cloud/set-env.sh with Public IP address of peers for Acme/Budger/Expo
 3. Setup the ACME peer
     - Move the peer binary to /usr/local/bin
     > chmod 755 peer
-    > sudo mv peer /usr/local/bin
+    >  mv peer /usr/local/bin
 
     - Setup docker
     > chmod 755 *.sh
-    > sudo ./docker.sh
+    >  ./docker.sh
 
     - Logout & Log back into VM
     > docker version

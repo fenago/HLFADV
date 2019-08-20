@@ -29,14 +29,14 @@ source set-env.sh
 export CORE_PEER_FILESYSTEMPATH="/var/ledgers/multi-org-ca/$ORG_NAME/$PEER_NAME/ledger" 
 
 # Create the ledger folders
-# To retain the environment vars we need to use -E flag with sudo
-sudo -E mkdir -p $CORE_PEER_FILESYSTEMPATH
+# To retain the environment vars we need to use -E flag with 
+ mkdir -p $CORE_PEER_FILESYSTEMPATH
 
 # Create the folder for the logs
 mkdir -p $PEER_LOGS
 
 # Start the peer
-sudo -E peer node start 2> $PEER_LOGS/peer.log &
+ peer node start 2> $PEER_LOGS/peer.log &
 
 echo "====>PLEASE Check Peer Log under  $PWD/$ORG_NAME/$PEER_NAME"
 echo "====>Make sure there are no errors!!!"

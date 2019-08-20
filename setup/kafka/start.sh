@@ -1,7 +1,7 @@
 # Launches Kafka server
 
 # Start the zookeeper
-sudo service zookeeper start
+ service zookeeper start
 
 # Give time for zookeeper to launch
 sleep 3s

@@ -8,31 +8,31 @@ Environment Setup
 cd ./setup
 chmod u+x  *.sh
 
-> sudo ./docker.sh
+>  ./docker.sh
   Logout of VM & Log back in
-> sudo ./go.sh
+>  ./go.sh
   Logout of VM & Log back in
-> sudo -E ./fabric-setup.sh
-> sudo -E ./caserver-setup.sh
+>  ./fabric-setup.sh
+>  ./caserver-setup.sh
 
 
 
 
 # Setup Docker
 1. cd /vagrant/setup
-2. sudo ./docker.sh
+2.  ./docker.sh
 3. Logout and Log in to the Vagrant VM
 4. docker version    <<This will show the version>>
 
 # Setup GoLang
 1. cd /vagrant/setup
-2. sudo ./go.sh
+2.  ./go.sh
 3. Logout and Log in to the Vagrant VM
 4. go version        <<This will show the version>>
 
 # Setup fabric
 1. cd /vagrant/setup
-2. sudo -E ./fabric-setup.sh
+2.  ./fabric-setup.sh
 3. orderer version
 4. peer version
 5. Creates the folders under the project root
@@ -42,13 +42,13 @@ chmod u+x  *.sh
 
 # Setup CA Server
 1. cd /vagrant/setup
-2. sudo -E ./caserver-setup.sh
+2.  ./caserver-setup.sh
 3. fabric-ca-sever   version
 4. fabric-ca-client  version
 
 # Setup the JQ utility
 1. cd /vagrant/setup
-2. sudo jq.sh
+2.  jq.sh
 3. jq version
 
 
@@ -68,20 +68,20 @@ Create temp directory and execute all setup tasks in it
 Instructions:
 =============
 1. Update the repository
-> sudo apt-get update
+>  apt-get update
 
 2. Check if you have Python v2.7
 > python --version
 If you do not already have it then use the command below
 
 3. Install Python on Ubuntu
-> sudo apt-get install -y software-properties-common python-software-properties
+>  apt-get install -y software-properties-common python-software-properties
 
 4. Install Go Lang
 https://medium.com/@patdhlk/how-to-install-go-1-9-1-on-ubuntu-16-04-ee64c073cd79
-sudo curl -O https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz
-sudo tar -xvf go1.9.1.linux-amd64.tar.gz
-sudo mv go /usr/local
+ curl -O https://storage.googleapis.com/golang/go1.9.1.linux-amd64.tar.gz
+ tar -xvf go1.9.1.linux-amd64.tar.gz
+ mv go /usr/local
 
 5. Change the .profile
 > cd $HOME
@@ -100,7 +100,7 @@ It should show you 1.9.x
 Eexcute the script
 
 cd /vagrant/setup
-sudo ./docker.sh
+ ./docker.sh
 
 >Exit out of shell
 vagrant reload
@@ -131,7 +131,7 @@ git clone https://acloudfan@gerrit.hyperledger.org/r/a/fabric
 https://gerrit.hyperledger.org/r/#/admin/projects/fabric
 
 8. Install jq
-sudo apt-get install -y jq
+ apt-get install -y jq
 
 
 Direct Binary Download Link

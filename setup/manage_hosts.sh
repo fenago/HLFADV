@@ -13,7 +13,7 @@ function removehost {
     if [ -n "$(grep $HOSTNAME /etc/hosts)" ]
     then
         echo "$HOSTNAME Found in your $ETC_HOSTS, Removing now..."
-        sudo sed -i".bak" "/$HOSTNAME/d" $ETC_HOSTS
+         sed -i".bak" "/$HOSTNAME/d" $ETC_HOSTS
     else
         echo "$HOSTNAME was not found in your $ETC_HOSTS"
     fi
@@ -27,7 +27,7 @@ function addhost {
             echo "$HOSTNAME already exists : $(grep $HOSTNAME $ETC_HOSTS)"
         else
             echo "Adding $HOSTNAME to your $ETC_HOSTS";
-#            sudo -- sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
+#             -- sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
             sh -c -e "echo '$HOSTS_LINE' >> /etc/hosts";
 
             if [ -n "$(grep $HOSTNAME /etc/hosts)" ]

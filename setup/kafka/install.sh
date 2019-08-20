@@ -2,16 +2,16 @@
 # Location of binaries => $HOME/kafka/bin
 
 # Update
-sudo apt-get update
+ apt-get update
 
 # Install JRE
-sudo apt-get --assume-yes install default-jre
+ apt-get --assume-yes install default-jre
 
 # Install Zookeepr
-sudo apt-get --assume-yes install zookeeperd
+ apt-get --assume-yes install zookeeperd
 # Stop zookeeper and prevent it from auto starting
-sudo service zookeeper stop
-sudo systemctl remove zookeeper
+ service zookeeper stop
+ systemctl remove zookeeper
 
 # Create a temp directory
 mkdir $HOME/kafka

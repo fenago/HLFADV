@@ -8,7 +8,7 @@ mkdir -p log
 
 LOG_FILE=./log/orderer.log
 
-sudo -E orderer 2> $LOG_FILE &
+ orderer 2> $LOG_FILE &
 
 echo "===> Done.  Please check logs under   $LOG_FILE"
 

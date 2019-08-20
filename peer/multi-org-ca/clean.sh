@@ -1,4 +1,4 @@
-sudo killall peer 2> /dev/null
+ killall peer 2> /dev/null
 
 # Remove all generated files
 rm *.block 2> /dev/null
@@ -12,7 +12,7 @@ function cleanOrgFolders {
     rm $ORG_NAME/*.block 2> /dev/null
 
     CORE_PEER_FILESYSTEM_PATH="/var/ledgers/multi-org-ca/$ORG_NAME"
-    sudo rm -rf $CORE_PEER_FILESYSTEM_PATH
+    rm -rf $CORE_PEER_FILESYSTEM_PATH
 }
 
 # Clean up the acme folder
