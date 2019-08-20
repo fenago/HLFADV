@@ -1,12 +1,13 @@
 #https://github.com/chaifeng/bento-ubuntu-docker/blob/master/Vagrantfile-bento
 
-if [ -z $SUDO_USER ]
-then
-    echo "===== Script need to be executed with  ===="
-    echo "Change directory to 'setup'"
-    echo "Usage:  ./docker.sh"
-    exit 0
-fi
+# Not needed for katacoda
+# if [ -z $SUDO_USER ]
+# then
+#     echo "===== Script need to be executed with sudo ===="
+#     echo "Change directory to 'setup'"
+#     echo "Usage:  ./docker.sh"
+#     exit 0
+# fi
 
 export DOCKER_VERSION=17
 
@@ -21,12 +22,13 @@ apt-get install -y "docker-ce"
 docker info
 # usermod -aG docker vagrant
 echo "======= Adding $USER to the docker group ======="
-usermod -aG docker $SUDO_USER
+usermod -aG docker $USER
 
 # Installs docker-compose
- apt-get install -y docker-compose
+apt-get install -y docker-compose
 
 echo "======= Done. PLEASE LOG OUT & LOG Back In ===="
 echo "Then validate by executing    'docker ps'"
 
 # Restart is needed after this
+sudo - $USER
