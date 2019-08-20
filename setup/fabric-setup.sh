@@ -23,7 +23,7 @@ chmod 755 ./bootstrap.sh
 
 # Feb 2019 - switched to v1.4
 #bash ./bootstrap.sh  1.3.0 1.3.0 0.4.10 
-./bootstrap.sh  1.4.0 1.4.0 0.4.10 
+./bootstrap.sh -d 1.4.0 1.4.0 0.4.10 
 
 echo "======= Copying the binaries to /usr/local/bin===="
 mkdir -p  bin
