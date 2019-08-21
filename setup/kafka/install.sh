@@ -2,7 +2,9 @@
 # Location of binaries => $HOME/kafka/bin
 
 # Update
- apt-get update
+apt-get update
+
+apt-get install telnet
 
 # Install JRE
  apt-get --assume-yes install default-jre
