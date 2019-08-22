@@ -18,3 +18,8 @@ echo "======== Updated .profile with GOROOT/GOPATH/PATH===="
 source ~/.profile
 echo "======= Done. PLEASE Execute   source ~/.profile ===="
 echo "Then validate by executing    'go version'"
+
+
+echo "source ~/.profile" >> .bash_profile
+source ~/.profile
+source .bash_profile
